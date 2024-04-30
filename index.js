@@ -1,6 +1,6 @@
-let button = document.querySelector('.button-base'); //обращение к кнопке
-let buttonEnd = document.querySelector('.button-end'); //обращение к кнопке сброса
-let textBase = document.querySelector('.text-base');//отображение счетчика 
+let button = document.querySelector('[data-find = button-base]'); //обращение к кнопке
+let buttonEnd = document.getElementById('button-end'); //обращение к кнопке сброса, по поиску её  id
+let textBase = document.getElementById('counter-text');//отображение счетчика 
 let counter = 0;
  button.addEventListener('click', function(){  //обработка действия 
     counter = counter+1;
